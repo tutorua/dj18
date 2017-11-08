@@ -5,7 +5,7 @@ from .models import Question
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Question group title', {'fields': ['question_text']}),
-        ('Date information',     {'fields': ['pub_date']}),
+        ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
         ]
 
 admin.site.register(Question, QuestionAdmin)
